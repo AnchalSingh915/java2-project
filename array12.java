@@ -14,14 +14,16 @@ class  array12
         System.out.println("enter the inserted position");
         pos=sc.nextInt();
         System.out.println("enter the inserted value");
+        iv=sc.nextInt();
         j=a[pos];
-        for(i=pos+1;i<5;i++)
+        a[pos]=iv;
+        for(i=pos+1;i<10;i++)
         {
           k=a[i];
           a[i]=j;
           j=k;
         }
-        for(i=0;i<=5;i++)
+        for(i=0;i<10;i++)
         System.out.print(" "+a[i]);
     }
 }
