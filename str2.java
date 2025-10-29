@@ -3,18 +3,28 @@ class str2
 {
     public static void main(String args[])
     {
-        String str;
-        int v=0,t=0;
         Scanner sc=new Scanner(System.in);
+        String str=" ",str1=" ";
+        char ch;
+        int i=0,l=0,t=0;
         System.out.println("enter the string");
-        str=sc.nextLine();  
-        for(v=0;v<str.length();v++)
+        str=sc.nextLine();
+        for(i=0;i<str.length();i++)
         {
-          for(t=0;t<=v;t++)
-          System.out.print(str.charAt(t));
-          System.out.println();
+            ch=str.charAt(i);
+            if(ch==' ')
+            {
+             l=str1.length()-1;
+            for(;l>=0;l--)
+            System.out.print(str1.charAt(l));
+            str1=" ";
+           }
+           else
+           str1=str1+ch;
         }
-    }     
+        l=str1.length()-1;
+         for(;l>=0;l--)
+            System.out.print(str1.charAt(l));
+    }
 }
-
-             
+            
