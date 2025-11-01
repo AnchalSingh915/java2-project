@@ -1,14 +1,14 @@
 import java.util.*;
-class str9
+class str11
 {    
         public static void main (String arr[])
         {
-            //function string length
+            //fundtion for lowercase
             Scanner sc=new Scanner (System.in);
             String str1= "I love india";
             System.out.println("the string str1 is:"+str1);
-            int len=str1.length();
-            System.out.println("the length of the string is:"+len);
+            String str2=str1.toLowerCase();
+            System.out.println("string change into lowercase:"+str2);
         }
 }
             

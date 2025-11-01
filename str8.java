@@ -1,23 +1,18 @@
- import java.util.*;
+import java.util.*;
 class str8
-{
-    public static void main(String args[])
-    {
-        Scanner sc=new Scanner(System.in);
-        String str=" ";
-        char ch;
-        int i=0,v=0,c=0;
-        System.out.println("enter the string");
-        str=sc.nextLine();
-        for(i=0;i<str.length();i++)
+{    
+        public static void main (String arr[])
         {
-          ch=str.charAt(i);
-          if(ch=='a'|| ch=='A'||ch=='e'|| ch=='E'||ch=='i'|| ch=='I'||ch=='o'|| ch=='O'||ch=='u'|| ch=='U')
-          v=v+1;
-          else
-          c=c+1;
+            Scanner sc=new Scanner (System.in);
+            String str1= "I love india";
+            System.out.println("the string str1 is:"+str1);
+            String str2= new String();
+            System.out.println("the string str2 is:"+str2);
+            String str3= new String("not empty");
+            System.out.println("the string str3 is:"+str3);
+            char charact[]= {'a','b','c','d'};
+            String str4=new String(charact);
+            System.out.println("the string str4 is:"+str4); 
         }
-        System.out.println("no. of vowels is:"+v+"no.of consonant is"+c);
-    }
 }
             
